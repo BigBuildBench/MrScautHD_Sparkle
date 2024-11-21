@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Project -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AssemblyName>Sparkle</AssemblyName>
+    <RootNamespace>Sparkle</RootNamespace>
+    <LangVersion>12</LangVersion>
+    <NoWarn>$(NoWarn);CS8618</NoWarn>
+  </PropertyGroup>
+
+  <!-- Nuget -->
+  <PropertyGroup>
+    <Title>Sparkle</Title>
+    <Authors>MrScautHD</Authors>
+    <Version>4.0.1</Version>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+    <Description>A fast, Cross-platform .NET 8 C# 12 game engine.</Description>
+    <PackageProjectUrl>https://sparkle-engine.com/</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/MrScautHD/Sparkle/blob/main/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/MrScautHD/Sparkle</RepositoryUrl>
+    <PackageTags>OpenGL, Angle, Game, Engine, Renderer, Graphics, C#12, Net8, dotnet, Modern, Sparkle, 2D, 3D, Raylib, Fast, Physics, XNA, Cross-platform, Audio</PackageTags>
+    <PackageIcon>icon.png</PackageIcon>
+  </PropertyGroup>
+
+  <!-- Libraries -->
+  
+  <!-- Icon -->
+  <ItemGroup>
+    <None Include="content\images\icon.png" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+  <!-- Content -->
+  <ItemGroup>
+    <Content Include="content/**/*" Pack="true">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <PackageCopyToOutput>true</PackageCopyToOutput>
+    </Content>
+  </ItemGroup>
+</Project>
